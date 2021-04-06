@@ -11,9 +11,9 @@ Not for commercial use.
 
 Team Members:
 
-Eleanor Carl
-Joanna Folk
-Kristin Jue
-Patrick Dang
+Eleanor Carl <br />
+Joanna Folk <br />
+Kristin Jue <br />
+Patrick Dang <br />
 
 ==============================
