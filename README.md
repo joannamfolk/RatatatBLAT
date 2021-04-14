@@ -28,6 +28,6 @@ Patrick Dang <br />
 * React
 
 ## Sprint 0
-[Working Agreement](https://drive.google.com/file/d/1cns9O15txqPenz3xbIFGyTZB4nuBgwED/view?usp=sharing)
-[Inception Deck](https://docs.google.com/presentation/d/1pqL7wckZ2-fApWCDbjxYf-VupFH3ftZu-qP5qMNx_sM/edit?usp=sharing)
+* [Working Agreement](https://drive.google.com/file/d/1cns9O15txqPenz3xbIFGyTZB4nuBgwED/view?usp=sharing)
+* [Inception Deck](https://docs.google.com/presentation/d/1pqL7wckZ2-fApWCDbjxYf-VupFH3ftZu-qP5qMNx_sM/edit?usp=sharing)
 
