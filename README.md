@@ -30,3 +30,4 @@ Patrick Dang <br />
 ## Sprint 0
 * [Working Agreement](https://drive.google.com/file/d/1cns9O15txqPenz3xbIFGyTZB4nuBgwED/view?usp=sharing)
 * [Inception Deck](https://docs.google.com/presentation/d/1pqL7wckZ2-fApWCDbjxYf-VupFH3ftZu-qP5qMNx_sM/edit?usp=sharing)
+* [Quality Agreement/Product backlog/Definition of Done](https://docs.google.com/document/d/1_BPO9rxwGwFKev2nUoCZb8qAvAckOHaQhb2bfQvIfNA/)
