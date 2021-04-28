@@ -60,3 +60,4 @@ const data = [
       caption: 'Card 9'
     }
   ];
+  export default data;
