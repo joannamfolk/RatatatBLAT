@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  background-color: darkgreen;
 }
 
 .App-body {
@@ -16,6 +17,9 @@
   color: white;
 }
 
+.Projects {
+  background-color: green;
+}
 .RatatatCard {
   width: 75%;
 
