@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import'../styles/App.css';
+import DeckImage from './DeckCards';
 import RatatatCard from './RatatatCard';
 import RatatatBackCard from './RatatatBackCard';
 import ReactFlipCard from 'react-card-flip';
@@ -38,9 +39,11 @@ const CardStyle = {
   
   const Deck = () => {
     return (
-      
+      //onclick lets return one, the onclick image is deck image
+
       <div style={{ margin: "auto", padding: "20%" }} className="Projects">
         <h1>RatatatBlat!</h1>
+    
         {Data.map((item, index) => (
           <Card image={`appImages/${item.front}`} project={item} key={`card-${index}`} />
         ))}
