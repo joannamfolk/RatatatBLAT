@@ -1,2 +1,5 @@
-.deck{  max-width:100%; 
+.card{  max-width:200; 
         height:auto}
+
+.deck{  max-width:240; 
+    height:auto}

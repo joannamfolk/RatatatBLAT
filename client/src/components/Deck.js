@@ -11,8 +11,8 @@ import Draggable from 'react-draggable';
 
 const CardStyle = {
   
-    width: "150px",
-    height: "180px"
+    //width: "150px",
+    //height: "180px"
   };
 
   const Card = ({ project }) => {
@@ -46,7 +46,7 @@ const CardStyle = {
         <h1>RatatatBlat!</h1>
     
         {Data.map((item, index) => (
-          <Card className={'deck'} image={`appImages/${item.front}`} project={item} key={`card-${index}`} />
+          <Card className='card' image={`appImages/${item.front}`} project={item} key={`card-${index}`} />
         ))}
       </div>
     );
