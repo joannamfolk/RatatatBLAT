@@ -7,7 +7,19 @@ class Game extends Component {
     constructor(){
         super();
         this.deck = [];
-        const values = ['0','1','2','3','4','5','6','7','8','9','10','11','12']
+        const values = ['0','0','0','0', // x4 each cat
+                        '1','1','1','1',
+                        '2','2','2','2',
+                        '3','3','3','3',
+                        '4','4','4','4',
+                        '5','5','5','5',
+                        '6','6','6','6',
+                        '7','7','7','7',
+                        '8','8','8','8',
+                        '9','9','9','9','9','9','9','9','9', // x9 rats!
+                        '10','10','10', // x3 each power card type
+                        '11','11','11',
+                        '12','12','12']
        
         for (let value in values){
             this.deck.push(`${values[value]}`);
@@ -42,8 +54,9 @@ class Game extends Component {
 
 
   render(){
-      const newDeck = new Game();
-        newDeck.shuffle();
+      const newGame = new Game();
+        newGame.shuffle();
+        console.log(newGame.deck);
 
     return(
         //create a deck
