@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/joannamfolk/RatatatBLAT/issues"
   },
-  "homepage": "https://github.com/joannamfolk/RatatatBLAT#readme"
+  "homepage": "https://github.com/joannamfolk/RatatatBLAT#readme",
+  "dependencies": {
+    "react-bootstrap": "^1.5.2"
+  }
 }

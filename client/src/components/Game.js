@@ -39,6 +39,7 @@ class Game extends Component {
     }
 
     dealTop() {
+        //console.log(this.deck.pop());
         return this.deck.pop();
     }
     state = {
@@ -56,7 +57,8 @@ class Game extends Component {
   render(){
       const newGame = new Game();
         newGame.shuffle();
-        console.log(newGame.deck);
+        newGame.dealTop();
+        //console.log(newGame.deck);
 
     return(
         //create a deck
