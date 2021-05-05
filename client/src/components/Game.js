@@ -5,8 +5,9 @@ import Card from './RatatatCard.js';
 
 
 class Game extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        this.state = {top: ""};
         this.deck = [];
         const values = ['0','0','0','0', // x4 each cat
                         '1','1','1','1',
@@ -43,16 +44,11 @@ class Game extends Component {
         //console.log(this.deck.pop());
         return this.deck.pop();
     }
-    state = {
-        value: ''
-    }
 
 
     handleClick = () => {
-        this.setState({
-            value: this.dealTop()
-        })
-        return this.deck.pop();
+        console.log('handleClick is working!');
+        this.setState(this.top = this.dealTop())
     }
 
 
@@ -65,8 +61,8 @@ class Game extends Component {
     return(
         //create a deck
         <div>
-        <Deck onclick={this.handleClick}></Deck>
-        <Button onclick={this.handleClick}></Button>
+        <Deck onClick={this.handleClick}></Deck>
+        <Button onClick={this.handleClick}></Button>
         <Card image={`appImages/${this.state.card}.png`}></Card>
         </div>
     

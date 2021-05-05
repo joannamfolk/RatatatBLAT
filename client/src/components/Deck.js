@@ -5,6 +5,7 @@ import RatatatCard from './RatatatCard';
 import RatatatBackCard from './RatatatBackCard';
 import ReactFlipCard from 'react-card-flip';
 import Data from '../numbercarddata.js';
+import './Deck.css';
 
 import Draggable from 'react-draggable';
 
@@ -45,7 +46,7 @@ const CardStyle = {
         <h1>RatatatBlat!</h1>
     
         {Data.map((item, index) => (
-          <Card image={`appImages/${item.front}`} project={item} key={`card-${index}`} />
+          <Card className={'deck'} image={`appImages/${item.front}`} project={item} key={`card-${index}`} />
         ))}
       </div>
     );
