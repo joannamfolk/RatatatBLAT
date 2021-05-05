@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Button} from 'react-bootstrap';
 import Deck from './DeckCards.js';
 import Card from './RatatatCard.js';
 
@@ -51,6 +52,7 @@ class Game extends Component {
         this.setState({
             value: this.dealTop()
         })
+        return this.deck.pop();
     }
 
 
@@ -64,6 +66,7 @@ class Game extends Component {
         //create a deck
         <div>
         <Deck onclick={this.handleClick}></Deck>
+        <Button onclick={this.handleClick}></Button>
         <Card image={`appImages/${this.state.card}.png`}></Card>
         </div>
     
