@@ -8,7 +8,7 @@ import './styles/App.css';
 class App extends Component {
   render(){
     return(<div className='App-body'><EventAndState></EventAndState>
-    <Deck></Deck><Game></Game></div>)
+    <Game></Game></div>)
   }
 }
 

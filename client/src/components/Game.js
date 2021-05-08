@@ -74,7 +74,6 @@ class Game extends Component {
         <Deck></Deck>
         </button>
         
-        <Card front={this.state.value} back={'backcard.png'}></Card>
         <div>here{this.state.cards}</div>
         </div>
 
