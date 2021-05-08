@@ -1,33 +1,20 @@
 import React, {Component} from 'react';
-import {Button} from 'react-bootstrap';
 import Deck from './DeckCards.js';
 import Card from './RatatatCard.js';
 
 
 class Game extends Component {
-    constructor(props){
-        super(props);
-        this.state = {top: ""};
+    constructor(){
+        super();
         this.deck = [];
-        const values = ['0','0','0','0', // x4 each cat
-                        '1','1','1','1',
-                        '2','2','2','2',
-                        '3','3','3','3',
-                        '4','4','4','4',
-                        '5','5','5','5',
-                        '6','6','6','6',
-                        '7','7','7','7',
-                        '8','8','8','8',
-                        '9','9','9','9','9','9','9','9','9', // x9 rats!
-                        '10','10','10', // x3 each power card type
-                        '11','11','11',
-                        '12','12','12']
+        const values = ['0','0','0','0','1','1','1','1','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6','7','7','7','7','8','8','8','8','9','9','9','9','9','10','10','10','11','11','11','12','12','12']
        
         for (let value in values){
             this.deck.push(`${values[value]}`);
         }
     
     }
+
     shuffle() {
         const { deck } = this;
         let m = deck.length, i;
@@ -41,31 +28,30 @@ class Game extends Component {
     }
 
     dealTop() {
-        //console.log(this.deck.pop());
         return this.deck.pop();
+    }
+    state = {
+        value: ''
     }
 
 
     handleClick = () => {
-        console.log('handleClick is working!');
-        this.setState(this.top = this.dealTop())
-    }
+        this.setState((value) => ({ value : this.dealTop()})
+        )};
 
 
   render(){
-      const newGame = new Game();
-        newGame.shuffle();
-        newGame.dealTop();
-        //console.log(newGame.deck);
+      const newDeck = new Game();
+        newDeck.shuffle();
 
     return(
         //create a deck
         <div>
+            <button onClick={this.handleClick}></button>
         <Deck onClick={this.handleClick}></Deck>
-        <Button onClick={this.handleClick}></Button>
         <Card image={`appImages/${this.state.card}.png`}></Card>
         </div>
-    
+
     )
   }
 }
