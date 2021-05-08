@@ -56,7 +56,7 @@ class Game extends Component {
         <Deck></Deck>
         </button>
         
-        <Card image={`appImages/${this.state.card}.png`}></Card>
+        <Card image={`appImages/${this.state.value}.png`}></Card>
         </div>
 
     )
