@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import Deck from './DeckCards.js';
-import Card from './RatatatCard.js';
+import Card from './Card.js';
 
 
 class Game extends Component {
     constructor(){
         super();
+        this.state = {
+            cards: [],
+            value: ''
+          };
         this.deck = [];
         const values = ['0','0','0','0','1','1','1','1','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6','7','7','7','7','8','8','8','8','9','9','9','9','9','10','10','10','11','11','11','12','12','12']
        
@@ -27,36 +31,50 @@ class Game extends Component {
         return this
     }
 
+    createCard = (value) => {
+        const newCard = (
+            <Card
+            key={this.state.value}
+            ></Card>
+        )
+        var cards = this.state.cards
+        cards.push(newCard);
+        this.setState({ cards: cards });
+    }
+
     dealTop() {
         return this.deck.pop();
     }
-    state = {
-        value: ''
-    }
+    
 
 
     handleClick = () => {
-        this.setState((card) => ({ value : this.dealTop()})
+        this.setState(() => ({ value : this.dealTop()}),
+        this.createCard()
         )};
 
 
   render(){
-      const newDeck = new Game();
-        newDeck.shuffle();
+      const deck = new Game();
+        deck.shuffle();
+        
+
 
     return(
         //create a deck
         <div>
-            <button onClick={this.handleClick} style={{
-        outline: "none", 
-        border: "none",
-        background: "transparent"
-    }}>
+        <button onClick={this.handleClick} 
+        style={{
+            outline: "none", 
+            border: "none",
+            background: "transparent"
+        }}>
         
         <Deck></Deck>
         </button>
         
-        <Card image={`appImages/${this.state.card}.png`}></Card>
+        <Card front={this.state.value} back={'backcard.png'}></Card>
+        <div>here{this.state.cards}</div>
         </div>
 
     )
