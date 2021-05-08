@@ -16,11 +16,9 @@ import Draggable from 'react-draggable';
     return (
       //onclick lets return one, the onclick image is deck image
 
-      <div style={{ margin: "auto", padding: "20%" }} className="Projects">
-        <h1>RatatatBlat!</h1>
-        <p>{props.front}</p>
+      <div style={{ margin: "auto", padding: "0%" }} className="Projects">
+     
         <Draggable>
-        
         <div  id="imgs">
         <ReactFlipCard isFlipped={isFlipped} flipDirection="horizontal">
         <div onDoubleClick={() => setIsFlipped((prev) => !prev)}>

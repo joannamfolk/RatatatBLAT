@@ -34,10 +34,11 @@ class Game extends Component {
     createCard = (value) => {
         const newCard = (
             <Card
-            key={this.state.value}
+            front={this.state.value}
+            default={{ x: 0, y: 0, width: 320, height: 200 }}
             ></Card>
         )
-        var cards = this.state.cards
+        var cards = this.state.cards.slice();
         cards.push(newCard);
         this.setState({ cards: cards });
     }
