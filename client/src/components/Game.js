@@ -36,7 +36,7 @@ class Game extends Component {
 
 
     handleClick = () => {
-        this.setState((value) => ({ value : this.dealTop()})
+        this.setState((card) => ({ value : this.dealTop()})
         )};
 
 
@@ -47,8 +47,15 @@ class Game extends Component {
     return(
         //create a deck
         <div>
-            <button onClick={this.handleClick}></button>
-        <Deck onClick={this.handleClick}></Deck>
+            <button onClick={this.handleClick} style={{
+        outline: "none", 
+        border: "none",
+        background: "transparent"
+    }}>
+        
+        <Deck></Deck>
+        </button>
+        
         <Card image={`appImages/${this.state.card}.png`}></Card>
         </div>
 
