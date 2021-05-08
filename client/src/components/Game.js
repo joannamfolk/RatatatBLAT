@@ -11,12 +11,23 @@ class Game extends Component {
             value: ''
           };
         this.deck = [];
-        const values = ['0','0','0','0','1','1','1','1','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6','7','7','7','7','8','8','8','8','9','9','9','9','9','10','10','10','11','11','11','12','12','12']
+        const values = ['0','0','0','0', // x4 each number card
+                        '1','1','1','1',
+                        '2','2','2','2',
+                        '3','3','3','3',
+                        '4','4','4','4',
+                        '5','5','5','5',
+                        '6','6','6','6',
+                        '7','7','7','7',
+                        '8','8','8','8',
+                        '9','9','9','9','9','9','9','9','9', // x9 rat kings
+                        '10','10','10', // x3 each power card type
+                        '11','11','11',
+                        '12','12','12']
        
         for (let value in values){
             this.deck.push(`${values[value]}`);
         }
-    
     }
 
     shuffle() {
@@ -27,7 +38,6 @@ class Game extends Component {
             i = Math.floor(Math.random() * m--);
             [deck[m], deck[i]] = [deck[i], deck[m]];
         }
-    
         return this
     }
 
@@ -47,39 +57,31 @@ class Game extends Component {
         return this.deck.pop();
     }
     
-
-
     handleClick = () => {
         this.setState(() => ({ value : this.dealTop()}),
         this.createCard()
         )};
 
-
   render(){
       const deck = new Game();
         deck.shuffle();
         
-
-
     return(
         //create a deck
         <div>
-        <button onClick={this.handleClick} 
-        style={{
-            outline: "none", 
-            border: "none",
-            background: "transparent"
+        <button 
+            onClick={this.handleClick} 
+            style={{
+                outline: "none", 
+                border: "none",
+                background: "transparent"
         }}>
-        
         <Deck></Deck>
         </button>
-        
         <div>here{this.state.cards}</div>
         </div>
-
     )
   }
 }
-
   
 export default Game;
