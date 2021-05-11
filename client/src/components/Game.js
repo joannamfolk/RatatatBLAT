@@ -24,10 +24,12 @@ class Game extends Component {
                         '10','10','10', // x3 each power card type
                         '11','11','11',
                         '12','12','12']
-       
+                        
+                        this.values = values.sort(() => Math.random() - .5)
+          
         for (let value in values){
             this.deck.push(`${values[value]}`);
-            this.deck.push(`${values[value]}`);
+             this.deck.push(`${values[value]}`);
         }
    
     }
