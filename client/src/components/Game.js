@@ -47,16 +47,18 @@ class Game extends Component {
     }
 
     createCard = () => {
-        const newCard = (
-            <Card
-            front={this.state.value}
-            default={{ x: 0, y: 0, width: 320, height: 200 }}
-            ></Card>
-        )
-        var cards = this.state.cards.slice();
-        console.log(cards);
-         cards.push(newCard);
-        this.setState({ cards: cards });
+        if (this.state.value) {
+            const newCard = (
+                <Card
+                front={this.state.value}
+                default={{ x: 0, y: 0, width: 320, height: 200 }}
+                ></Card>
+            )
+            var cards = this.state.cards.slice();
+            console.log("card" + cards);
+            cards.push(newCard);
+            this.setState({ cards: cards });
+        }
     }
 
     dealTop() {
