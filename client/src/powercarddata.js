@@ -7,7 +7,7 @@
     //draw 2 power card
     //3 cards
     {
-      front: 'draw2.png',
+      front: '10.png',
       data: 10,
       back: 'cardback.png',
       altText: 'Card draw2',
@@ -16,7 +16,7 @@
     //peek power card
     //3 cards
     {
-      front: 'peek.png',
+      front: '11.png',
       data: 11,
       back: 'cardback.png',
       altText: 'Card peek',
@@ -25,7 +25,7 @@
     //swap power card
     //3 cards
     {
-      front: 'swap.png',
+      front: '12.png',
       data: 12,
       back: 'cardback.png',
       altText: 'Card swap',

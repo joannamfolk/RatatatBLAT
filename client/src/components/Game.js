@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Deck from './DeckCards.js';
 import Card from './Card.js';
-
+import './Deck.css';
 
 class Game extends Component {
     constructor(){
@@ -27,10 +27,13 @@ class Game extends Component {
        
         for (let value in values){
             this.deck.push(`${values[value]}`);
+            this.deck.push(`${values[value]}`);
         }
+   
     }
 
     shuffle() {
+        console.log("does it shuffle");
         const { deck } = this;
         let m = deck.length, i;
     
@@ -41,7 +44,7 @@ class Game extends Component {
         return this
     }
 
-    createCard = (value) => {
+    createCard = () => {
         const newCard = (
             <Card
             front={this.state.value}
@@ -49,16 +52,18 @@ class Game extends Component {
             ></Card>
         )
         var cards = this.state.cards.slice();
-        cards.push(newCard);
+        console.log(cards);
+         cards.push(newCard);
         this.setState({ cards: cards });
     }
 
     dealTop() {
-        return this.deck.pop();
+     return this.deck.pop()
     }
     
     handleClick = () => {
         this.setState(() => ({ value : this.dealTop()}),
+        console.log(this.state.value),
         this.createCard()
         )};
 
@@ -78,7 +83,7 @@ class Game extends Component {
         }}>
         <Deck></Deck>
         </button>
-        <div>here{this.state.cards}</div>
+        <div>{this.state.cards}</div>
         </div>
     )
   }
