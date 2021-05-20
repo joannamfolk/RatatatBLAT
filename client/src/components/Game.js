@@ -59,10 +59,14 @@ class Game extends Component {
             cards.push(newCard);
             this.setState({ cards: cards });
         }
+        console.log("number of cards turned over", this.state.cards.length);
     }
 
     dealTop() {
-     return this.deck.pop()
+        if (this.deck.length === 0) {
+            console.log("the deck of remaining cards is empty!");
+        }
+        return this.deck.pop()
     }
     
     handleClick = () => {
