@@ -11,39 +11,7 @@ class Game extends Component {
             value: ''
           };
         this.deck = [];
-        const values = ['0','0','0','0', // x4 each number card
-                        '1','1','1','1',
-                        '2','2','2','2',
-                        '3','3','3','3',
-                        '4','4','4','4',
-                        '5','5','5','5',
-                        '6','6','6','6',
-                        '7','7','7','7',
-                        '8','8','8','8',
-                        '9','9','9','9','9','9','9','9','9', // x9 rat kings
-                        '10','10','10', // x3 each power card type
-                        '11','11','11',
-                        '12','12','12']
-                        
-                        this.values = values.sort(() => Math.random() - .5)
-          
-        for (let value in values){
-            this.deck.push(`${values[value]}`);
-             this.deck.push(`${values[value]}`);
-        }
-   
-    }
-
-    shuffle() {
-        console.log("does it shuffle");
-        const { deck } = this;
-        let m = deck.length, i;
-    
-        while(m){
-            i = Math.floor(Math.random() * m--);
-            [deck[m], deck[i]] = [deck[i], deck[m]];
-        }
-        return this
+        this.values = this.populateDeck();
     }
 
     createCard = () => {
@@ -65,8 +33,12 @@ class Game extends Component {
     dealTop() {
         if (this.deck.length === 0) {
             console.log("the deck of remaining cards is empty!");
+            console.log("cards array", this.state.cards);
+            this.populateDeck();
+        } else {
+            console.log("deck array", this.deck);
+            return this.deck.pop()
         }
-        return this.deck.pop()
     }
     
     handleClick = () => {
@@ -75,9 +47,30 @@ class Game extends Component {
         this.createCard()
         )};
 
+    populateDeck() {
+        this.values = ['0','0','0','0', // x4 each number card
+                        '1','1','1','1',
+                        '2','2','2','2',
+                        '3','3','3','3',
+                        '4','4','4','4',
+                        '5','5','5','5',
+                        '6','6','6','6',
+                        '7','7','7','7',
+                        '8','8','8','8',
+                        '9','9','9','9','9','9','9','9','9', // x9 rat kings
+                        '10','10','10', // x3 each power card type
+                        '11','11','11',
+                        '12','12','12']
+                        
+        this.values = this.values.sort(() => Math.random() - .5)
+        for (let value in this.values){
+            this.deck.push(`${this.values[value]}`);
+             this.deck.push(`${this.values[value]}`);
+        }
+        this.setState({cards: []})
+    }
+
   render(){
-      const deck = new Game();
-        deck.shuffle();
         
     return(
         //create a deck
