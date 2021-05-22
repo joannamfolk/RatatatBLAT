@@ -18,18 +18,23 @@ import Draggable from 'react-draggable';
 
       <div style={{ margin: "auto", padding: "0%" }} className="Projects">
      
-        <Draggable>
+        <Draggable>    
         <div  id="imgs">
         <ReactFlipCard isFlipped={isFlipped} flipDirection="horizontal">
+
+        <div onDoubleClick={() => setIsFlipped((prev) => !prev)} className="card-body">
+        <RatatatBackCard image={`appImages/cardback.png`}></RatatatBackCard>
+        </div>
+          
         <div onDoubleClick={() => setIsFlipped((prev) => !prev)}>
         <RatatatCard image={`appImages/${props.front}.png`}></RatatatCard>
         </div>
     
-        <div onDoubleClick={() => setIsFlipped((prev) => !prev)} className="card-body">
-        <RatatatBackCard image={`appImages/cardback.png`}></RatatatBackCard>
-        </div>
+      
         </ReactFlipCard>
         </div>
+
+        
         </Draggable>
       </div>
     );
