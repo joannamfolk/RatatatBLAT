@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PopoverComponent from './Popover.js';
 import Deck from './DeckCards.js';
 import Card from './Card.js';
 import './Deck.css';
@@ -75,6 +76,7 @@ class Game extends Component {
     return(
         //create a deck
         <div>
+            <PopoverComponent/>
         <button 
             onClick={this.handleClick} 
             style={{
