@@ -3,6 +3,7 @@ import PopoverComponent from './Popover.js';
 import Deck from './DeckCards.js';
 import Card from './Card.js';
 import './Deck.css';
+import {Button} from 'react-bootstrap';
 
 class Game extends Component {
     constructor(){
@@ -77,6 +78,7 @@ class Game extends Component {
         //create a deck
         <div>
             <PopoverComponent/>
+            <Button variant="secondary">New Game</Button>
         <button 
             onClick={this.handleClick} 
             style={{

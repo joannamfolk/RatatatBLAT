@@ -6,17 +6,16 @@ class PopoverComponent extends Component {
     render() {
         const popover = (
             <Popover id="popover-basic">
-              <Popover.Title as="h3">Popover right</Popover.Title>
+              <Popover.Title as="h3">Rules!!!</Popover.Title>
               <Popover.Content>
-                And here's some <strong>amazing</strong> contesnt. It's very engaging.
-                right?
+                The rules go here!
               </Popover.Content>
             </Popover>
           );
           
           const Example = () => (
             <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-              <Button variant="success">Click me to see</Button>
+              <Button variant="success">Rules</Button>
             </OverlayTrigger>
           );
         return (
