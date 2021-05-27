@@ -2,8 +2,17 @@
         height:auto}
 
 .deck{  max-width:240; 
-    height:auto}
+        height:auto}
+
+.discard {
+        background-color: green;
+        width:240px; 
+        height:330px;
+        text-align: center;
+        vertical-align: middle;
+}
 
  #imgs { position: absolute;
 
 }
+

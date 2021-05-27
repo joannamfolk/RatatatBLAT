@@ -89,6 +89,8 @@ class Game extends Component {
         <Deck></Deck>
         </button>
         <div>{this.state.cards}</div>
+        <div className="discard">Discard Pile</div>
+        
         </div>
     )
   }
