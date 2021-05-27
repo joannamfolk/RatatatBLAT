@@ -4,7 +4,7 @@ class DeckCards extends Component {
 
     render() {
         return (
-                <img style={{transform: this._transform}} className='deck' src='../AppImages/deck.png' alt='Deck of Cards'/>
+                <img style={{transform: this._transform}} className='deck' src='appImages/deck.png' alt='Deck of Cards'/>
         )
     }
 }
