@@ -78,7 +78,7 @@ class Game extends Component {
         //create a deck
         <div>
             <PopoverComponent/>
-            <Button variant="secondary">New Game</Button>
+            <Button variant="secondary" style={{color: "yellow"}}>New Game</Button>
         <button 
             onClick={this.handleClick} 
             style={{
