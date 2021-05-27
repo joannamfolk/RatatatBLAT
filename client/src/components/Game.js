@@ -80,7 +80,7 @@ class Game extends Component {
             <div id="rules">
             <PopoverComponent/>
             </div>
-            <Button variant="secondary" style={{color: "yellow", float: "left"}}>New Game</Button>
+            <Button variant="light" style={{fontWeight: "bold", float: "left"}}>New Game</Button>
         <button 
             onClick={this.handleClick} 
             style={{

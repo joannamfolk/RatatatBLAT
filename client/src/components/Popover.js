@@ -35,7 +35,7 @@ class PopoverComponent extends Component {
           
           const Example = () => (
             <OverlayTrigger trigger="click" placement="left" overlay={popover}>
-              <Button variant="success">Rules</Button>
+              <Button variant="dark" style={{fontWeight: "bold"}}>Rules</Button>
             </OverlayTrigger>
           );
         return (
