@@ -11,8 +11,12 @@
         text-align: center;
         vertical-align: middle;
 }
+.popover {
+        max-width: 600px;}
 
- #imgs { position: absolute;
+ul {
+        list-style-image: url("https://i.ibb.co/bdcQ9NM/Hnet-com-image-1.png");}
 
-}
+#imgs { 
+         position: absolute;}
 
