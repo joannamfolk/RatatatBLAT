@@ -2,7 +2,9 @@
         height:auto}
 
 .deck{  max-width:240; 
-        height:auto}
+        height:auto;
+        vertical-align: middle;
+padding-left: 25%}
 
 .discard {
         background-color: green;
@@ -10,6 +12,9 @@
         height:330px;
         text-align: center;
         vertical-align: middle;
+}
+#rules {
+        float: right;
 }
 .popover {
         max-width: 600px;}

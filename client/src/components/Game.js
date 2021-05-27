@@ -77,8 +77,10 @@ class Game extends Component {
     return(
         //create a deck
         <div>
+            <div id="rules">
             <PopoverComponent/>
-            <Button variant="secondary" style={{color: "yellow"}}>New Game</Button>
+            </div>
+            <Button variant="secondary" style={{color: "yellow", float: "left"}}>New Game</Button>
         <button 
             onClick={this.handleClick} 
             style={{
@@ -89,9 +91,10 @@ class Game extends Component {
         <Deck></Deck>
         </button>
         <div>{this.state.cards}</div>
-        <div className="discard">Discard Pile</div>
-        
+        <img alt="playArea" src="appImages/playAreaAlt.png"></img>
+        <img alt="discardOutline" src="appImages/discardOutline.png"></img>
         </div>
+        
     )
   }
 }
