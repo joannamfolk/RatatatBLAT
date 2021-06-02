@@ -49,6 +49,16 @@ class Game extends Component {
         this.createCard()
         )};
 
+    handleNewGame = () => {
+        // eslint-disable-next-line no-unused-expressions
+        this.setState(() => ({
+            cards: [],
+            value: '',
+          })),
+        this.deck = [],
+        this.values = this.populateDeck()
+    };
+
     populateDeck() {
         this.values = ['0','0','0','0', // x4 each number card
                         '1','1','1','1',
@@ -80,7 +90,11 @@ class Game extends Component {
             <div id="rules">
             <PopoverComponent/>
             </div>
-            <Button variant="light" style={{fontWeight: "bold", float: "left"}}>New Game</Button>
+            <Button 
+                variant="light" style={{fontWeight: "bold", float: "left"}}
+                onClick={this.handleNewGame}
+            >New Game
+            </Button>
         <button 
             onClick={this.handleClick} 
             style={{
