@@ -15,6 +15,16 @@
   color: white;
 }
 
+#box {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+}
+
 #div {
   width: 20%;
 }

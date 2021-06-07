@@ -59,6 +59,7 @@ class Game extends Component {
         this.values = this.populateDeck()
     };
 
+
     populateDeck() {
         this.values = ['0','0','0','0', // x4 each number card
                         '1','1','1','1',
@@ -87,6 +88,7 @@ class Game extends Component {
     return(
         //create a deck
         <div>
+            
             <div id="rules">
             <PopoverComponent/>
             </div>

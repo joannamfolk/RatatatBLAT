@@ -19,7 +19,7 @@ import Draggable from 'react-draggable';
       <div style={{ margin: "auto", padding: "0%" }} className="Projects">
      
         <Draggable>    
-        <div  id="imgs">
+        <div id="imgs">
         <ReactFlipCard isFlipped={isFlipped} flipDirection="horizontal">
 
         <div onDoubleClick={() => setIsFlipped((prev) => !prev)} className="card-body">
