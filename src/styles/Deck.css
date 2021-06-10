@@ -1,7 +1,8 @@
-.card{  max-width:200; 
+.card{  max-width:200px; 
         height:auto}
 
-.deck{  max-width:240; 
+.deck{  
+        max-width:240; 
         height:auto;
         vertical-align: middle;
 padding-left: 25%}
@@ -13,9 +14,11 @@ padding-left: 25%}
         text-align: center;
         vertical-align: middle;
 }
+
 #rules {
         float: right;
 }
+
 .popover {
         max-width: 600px;}
 

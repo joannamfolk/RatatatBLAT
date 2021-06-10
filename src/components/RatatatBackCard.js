@@ -3,7 +3,7 @@ class RatatatCard extends Component {
 
     render() {
         return (
-                <img style={{transform: this._transform}} className="RatatatCard" src={this.props.image} alt={this.props.name}/>
+                <img className="RatatatCard" src={this.props.image} alt={this.props.name}/>
         )
     }
 }

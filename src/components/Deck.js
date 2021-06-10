@@ -9,8 +9,8 @@ import Draggable from 'react-draggable';
 
 const CardStyle = {
   
-    width: "150px",
-    height: "180px"
+    width: "200px",
+    height: "320px"
   };
 
   const Card = ({ project }) => {

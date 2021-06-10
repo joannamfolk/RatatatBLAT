@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PopoverComponent from './Popover.js';
 import Deck from './DeckCards.js';
 import Card from './Card.js';
-import './Deck.css';
+import '../styles/Deck.css';
 import {Button} from 'react-bootstrap';
 
 class Game extends Component {
@@ -22,10 +22,10 @@ class Game extends Component {
                 <Card
                 front={this.state.value}
                 default={{ x: 0, y: 0, width: 320, height: 200 }}
-                ></Card>
+                ></Card>        
             )
             var cards = this.state.cards.slice();
-            console.log("card" + cards);
+            console.log("card" + cards);    
             cards.push(newCard);
             this.setState({ cards: cards });
         }
@@ -109,6 +109,7 @@ class Game extends Component {
         <div>{this.state.cards}</div>
         <img alt="drawPile" src="appImages/drawPile.png"></img>
         <img alt="discardOutline" src="appImages/discardOutline.png"></img>
+        <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
         </div>
         
     )
