@@ -107,7 +107,7 @@ class Game extends Component {
         <Deck></Deck>
         </button>
         <div>{this.state.cards}</div>
-        <img alt="playArea" src="appImages/playAreaAlt.png"></img>
+        <img alt="drawPile" src="appImages/drawPile.png"></img>
         <img alt="discardOutline" src="appImages/discardOutline.png"></img>
         </div>
         
