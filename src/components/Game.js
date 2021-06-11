@@ -93,6 +93,22 @@ class Game extends Component {
             <div id="header">
             </div>
         <div>
+            <Row>
+            <Col xs> 
+            <div id="rules">
+            <PopoverComponent/>
+            </div>
+                </Col>
+                <Col>
+            <div id="new">
+            <Button 
+                variant="dark" style={{fontWeight: "bold"}}
+                onClick={this.handleNewGame}
+            >New Game
+            </Button>
+            </div>
+            </Col>
+                </Row>
         <Row className="justify-content-md-center">
         <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
         </Row>
@@ -106,16 +122,10 @@ class Game extends Component {
                    <Row className="justify-content-md-center">
                 <Col xs> 
             <div id="rules">
-            <PopoverComponent/>
             </div>
                 </Col>
                 <Col>
             <div id="new">
-            <Button 
-                variant="light" style={{fontWeight: "bold"}}
-                onClick={this.handleNewGame}
-            >New Game
-            </Button>
             </div>
             </Col>
             <Col>
@@ -127,7 +137,7 @@ class Game extends Component {
                 background: "transparent"
         }}>
         <Deck></Deck>
-        </button>
+        </button>   
         </Col>
         </Row>
 
