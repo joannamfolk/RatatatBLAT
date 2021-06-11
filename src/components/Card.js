@@ -16,11 +16,11 @@ import Draggable from 'react-draggable';
     return (
       //onclick lets return one, the onclick image is deck image
 
-      <div style={{  padding: "0%" }} className="Projects">
+      <div style={{ margin: "auto", padding: "0%" }} className="Projects">
      
         <Draggable>    
         <div id="imgs">
-        <ReactFlipCard isFlipped={isFlipped} flipDirection="vertical">
+        <ReactFlipCard isFlipped={isFlipped} flipDirection="horizontal">
 
         <div onDoubleClick={() => setIsFlipped((prev) => !prev)} className="card-body">
         <RatatatBackCard image={`appImages/cardback.png`}></RatatatBackCard>

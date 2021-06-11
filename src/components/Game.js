@@ -3,7 +3,8 @@ import PopoverComponent from './Popover.js';
 import Deck from './DeckCards.js';
 import Card from './Card.js';
 import '../styles/Deck.css';
-import {Button} from 'react-bootstrap';
+import {Row, Col, Container, Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Game extends Component {
     constructor(){
@@ -87,16 +88,24 @@ class Game extends Component {
         
     return(
         //create a deck
+        <Container>
         <div>
-            
+            <Row className="justify-content-md-center">
+                <Col xs> 
             <div id="rules">
             <PopoverComponent/>
             </div>
+                </Col>
+                <Col>
+            <div id="new">
             <Button 
-                variant="light" style={{fontWeight: "bold", float: "left"}}
+                variant="light" style={{fontWeight: "bold"}}
                 onClick={this.handleNewGame}
             >New Game
             </Button>
+            </div>
+            </Col>
+            <Col>
         <button 
             onClick={this.handleClick} 
             style={{
@@ -106,12 +115,23 @@ class Game extends Component {
         }}>
         <Deck></Deck>
         </button>
+        </Col>
+        </Row>
+        <Row className="justify-content-md-center">
+           
         <div>{this.state.cards}</div>
+        
         <img alt="drawPile" src="appImages/drawPile.png"></img>
         <img alt="discardOutline" src="appImages/discardOutline.png"></img>
+        </Row>
+        <Row className="justify-content-md-center">
         <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
+        </Row>
+        <Row className="justify-content-md-center">
+        <img alt="playAreaGroupTop" class="playAreaGroupTop" src="appImages/cardTopSpotHorizontal.png"></img>
+        </Row>
         </div>
-        
+        </Container>
     )
   }
 }
