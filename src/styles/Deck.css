@@ -2,6 +2,7 @@
         height:auto}
 
 .deck{  
+        position: absolute;
         max-width:240; 
         height:auto;
         vertical-align: middle;
@@ -28,6 +29,9 @@ ul {
 #imgs { 
          position: absolute;}
 
+#header {
+        padding-top: 2%;
+}
 /* .playAreaGroupTop {
 
 } */

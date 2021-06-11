@@ -87,8 +87,11 @@ class Game extends Component {
   render(){
         
     return(
+        
         //create a deck
-        <Container>
+        <Container fluid>
+            <div id="header">
+            </div>
         <div>
             <Row className="justify-content-md-center">
                 <Col xs> 
