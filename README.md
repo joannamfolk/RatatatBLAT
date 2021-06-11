@@ -16,7 +16,7 @@ Rest of the deck, face down, in the middle. This is the DRAW pile.
   * If players draw a DRAW 2 card, they may take up to two more turns. First they pick the next card from the DRAW pile. If they decide to use this card, their turn is over and they do not take the second turn. If they do not use the first card, they discard it and draw another card. If they do not use it, they place it on the DISCARD pile and their turn is over.
   
   
-__Winning:__When a player thinks he or she has the lowest score and can win, the player ends the game by shouting, “Rat-a Tat-BLAT”. After this, the other players each get ONE more turn. Then players turn their cards face up. If players have a POWER card, they must put it in the DISCARD pile and take the top card from the DRAW pile. </li>
+__Winning:__ When a player thinks he or she has the lowest score and can win, the player ends the game by shouting, “Rat-a Tat-BLAT”. After this, the other players each get ONE more turn. Then players turn their cards face up. If players have a POWER card, they must put it in the DISCARD pile and take the top card from the DRAW pile. </li>
 __SCORING:__ Players add the numbers on their four cards. The player with the lowest score wins. 
 
 
