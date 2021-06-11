@@ -93,7 +93,17 @@ class Game extends Component {
             <div id="header">
             </div>
         <div>
-            <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center">
+        <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
+        </Row>
+        <Row className="justify-content-md-center">
+           
+        <div>{this.state.cards}</div>
+        
+        <img alt="drawPile" src="appImages/drawPile.png"></img>
+        <img alt="discardOutline" src="appImages/discardOutline.png"></img>
+        </Row>
+                   <Row className="justify-content-md-center">
                 <Col xs> 
             <div id="rules">
             <PopoverComponent/>
@@ -120,16 +130,7 @@ class Game extends Component {
         </button>
         </Col>
         </Row>
-        <Row className="justify-content-md-center">
-           
-        <div>{this.state.cards}</div>
-        
-        <img alt="drawPile" src="appImages/drawPile.png"></img>
-        <img alt="discardOutline" src="appImages/discardOutline.png"></img>
-        </Row>
-        <Row className="justify-content-md-center">
-        <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
-        </Row>
+
         <Row className="justify-content-md-center">
         <img alt="playAreaGroupTop" class="playAreaGroupTop" src="appImages/cardTopSpotHorizontal.png"></img>
         </Row>
