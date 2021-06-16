@@ -50,15 +50,14 @@ class Game extends Component {
         this.createCard()
         )};
 
-    // handleNewGame = () => {
-    //     // eslint-disable-next-line no-unused-expressions
-    //     this.setState(() => ({
-    //         cards: [],
-    //         value: '',
-    //       })),
-    //     this.deck = [],
-    //     this.values = this.populateDeck()
-    // };
+    handleNewGame = () => {
+        this.deck = [],
+        this.values = this.populateDeck()
+        this.setState(() => ({
+            cards: [],
+            value: '',
+          })),
+    };
 
 
     populateDeck() {
