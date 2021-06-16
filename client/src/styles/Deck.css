@@ -1,15 +1,32 @@
 .card{  max-width:200px; 
         height:auto}
+html {
+        background-color: #4a9915;
+}
+.container 
+{
+        height: 75em;
+        width: 40em;
+        background:#fff;
+}
 
-.deck{  
-        position: absolute;
-        max-width:240; 
-        height:auto;
-        vertical-align: middle;
-padding-left: 25%}
+.content
+{
+        font-size: 24px;
+        height:40em;
+        display:inline-block;
+        padding:5%;
+        overflow:auto;
+        background:#fff;
+}
+
+.row 
+{
+        padding: 10px;
+}
 
 .discard {
-        background-color: green;
+        background-color: #4a9915;
         width:240px; 
         height:330px;
         text-align: center;

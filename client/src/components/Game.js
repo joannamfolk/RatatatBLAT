@@ -112,11 +112,22 @@ class Game extends Component {
         <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
         </Row>
         <Row className="justify-content-md-center">
-           
+        <button 
+            onClick={this.handleClick} 
+            style={{
+                outline: "none", 
+                border: "none",
+                background: "transparent"
+             }}>
+        <Deck></Deck>
+        </button>      
         <div>{this.state.cards}</div>
-        
+
         <img alt="drawPile" src="appImages/drawPile.png"></img>
+
         <img alt="discardOutline" src="appImages/discardOutline.png"></img>
+
+       
         </Row>
                    <Row className="justify-content-md-center">
                 <Col xs> 
@@ -128,15 +139,7 @@ class Game extends Component {
             </div>
             </Col>
             <Col>
-        <button 
-            onClick={this.handleClick} 
-            style={{
-                outline: "none", 
-                border: "none",
-                background: "transparent"
-        }}>
-        <Deck></Deck>
-        </button>   
+
         </Col>
         </Row>
 
