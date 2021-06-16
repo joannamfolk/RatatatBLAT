@@ -92,7 +92,7 @@ class Game extends Component {
             <div id="header">
             </div>
         <div>
-            <Row >
+            <Row>
             <Col xs> 
             <div id="rules">
             <PopoverComponent/>
@@ -109,7 +109,7 @@ class Game extends Component {
             </Col>
                 </Row>
         <Row className="justify-content-md-center">
-        <img alt="playAreaGroup img-fluid" src="appImages/cardSpotHorizontal.png"></img>
+        <img alt="playAreaGroup" src="appImages/cardSpotHorizontal.png"></img>
         </Row>
         <Row className="justify-content-md-center">
         <button 
@@ -123,9 +123,9 @@ class Game extends Component {
         </button>      
         <div class="mt-2">{this.state.cards}</div>
 
-        <img  alt="drawPile" class="img-fluid" src="appImages/drawPile.png" ></img>
+        <img alt="drawPile" src="appImages/drawPile.png"></img>
 
-        <img alt="discardOutline" class="img-fluid" src="appImages/discardOutline.png"></img>
+        <img alt="discardOutline" src="appImages/discardOutline.png"></img>
 
        
         </Row>
@@ -145,7 +145,7 @@ class Game extends Component {
         </Row>
 
         <Row className="justify-content-md-center">
-        <img alt="playAreaGroupTop" class="playAreaGroupTop img-fluid" src="appImages/cardTopSpotHorizontal.png"></img>
+        <img alt="playAreaGroupTop" class="playAreaGroupTop" src="appImages/cardTopSpotHorizontal.png"></img>
         </Row>
         </div>
         </Container>
