@@ -56,7 +56,7 @@ class Game extends Component {
         this.setState(() => ({
             cards: [],
             value: '',
-          })),
+          }))
     };
 
 
