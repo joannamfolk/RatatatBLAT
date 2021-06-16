@@ -43,7 +43,7 @@ class PopoverComponent extends Component {
                 <div class="row">
 
                   <div class="column">
-                    <img src="playAreasRules.png" alt="Image of the four player spots" />      
+                    <img src="playAreasRules.png" alt="Four player spots" />      
                   </div>
 
                 </div>
@@ -60,7 +60,7 @@ class PopoverComponent extends Component {
                 <div class="row">
 
                   <div class="column">
-                    <img src="ruleDeck.png" alt="Image of the Deck Dealing a Card" />      
+                    <img src="ruleDeck.png" alt="Deck Dealing a Card" />      
                   </div>
 
                 </div>
@@ -77,7 +77,7 @@ class PopoverComponent extends Component {
                 <div class="row">
 
                   <div class="column">
-                    <img src="ruleFrontBack02.png" alt="Image of a Card Flipping" />      
+                    <img src="ruleFrontBack02.png" alt="Card Flipping" />      
                   </div>
 
                 </div>
@@ -124,7 +124,7 @@ class PopoverComponent extends Component {
 
                 <div class="row">
                   <div class="column">
-                    <img src="numberCardsRules.png" alt="An image of a 0, 5, and 9 card together" />
+                    <img src="numberCardsRules.png" alt="0, 5, and 9 card together" />
                   </div>
 
                   <div class="column">
