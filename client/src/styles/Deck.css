@@ -5,7 +5,7 @@ html {
 }
 .container 
 {
-        height: 75em;
+        height: 60em;
         width: 40em;
         background:#fff;
 }
@@ -13,7 +13,7 @@ html {
 .content
 {
         font-size: 24px;
-        height:40em;
+        height:31em;
         display:inline-block;
         padding:5%;
         overflow:auto;
