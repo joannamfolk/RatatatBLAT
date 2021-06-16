@@ -9,26 +9,167 @@ class PopoverComponent extends Component {
             <Popover id="popover-basic">
               <Popover.Title as="h3"><h3>Rules</h3></Popover.Title>
               <Popover.Content>
-              <strong>Objective:</strong> To have the lowest score at the end of the game 
-              <br></br>To play:
-              <hr/>
-             <ul>
-              <br></br><li>Each player is dealt four cards, face down. Players do not look at their cards. 
-              <br></br>Rest of the deck, face down, in the middle. This is the DRAW pile. 
-              <br></br>Dealer turns the top card face up and places it to the side of the DRAW pile. This is the DISCARD pile. 
-              <br/>
-              </li>
-              
-              <br></br><li>Players arrange their four cards face down in a line in front of them. 
-              Each player gets to look at their two outside cards, and then turn them face down. This is the last time players can look at their cards, until they draw a PEEK card.
-              Players take turns. For each turn players have two choices. They may take the top card from the DISCARD pile. This card is used to replace one of their line of cards. The card from the line is then placed face up on the top of the DISCARD pile, OR take the top card from the DRAW pile. Players may use it to replace one of the cards in their line, or place it, face up, on the DISCARD pile.</li>
-              <br></br><li>There are three kinds of POWER cards: SWAP, DRAW 2, and PEEK. </li>
-              <br></br><li>If players draw a PEEK card, they can peek at any ONE of their cards. Their turn is over and they put the PEEK card on the DISCARD pile. <br/>
-              <br></br><li>If players draw a SWAP card, they may switch any one of their cards with any card from another player. They cannot look at the card being swapped or the other player’s card. After the switch, the turn is over and the SWAP card is placed on the DISCARD pile. </li>
-              <br></br><li>If players draw a DRAW 2 card, they may take up to two more turns. First they pick the next card from the DRAW pile. If they decide to use this card, their turn is over and they do not take the second turn. If they do not use the first card, they discard it and draw another card. If they do not use it, they place it on the DISCARD pile and their turn is over.</li>
-              <br></br><b>Winning:</b>When a player thinks he or she has the lowest score and can win, the player ends the game by shouting, “Rat-a Tat-BLAT”. After this, the other players each get ONE more turn. Then players turn their cards face up. If players have a POWER card, they must put it in the DISCARD pile and take the top card from the DRAW pile. </li>
-              <br></br><b>SCORING:</b> Players add the numbers on their four cards. The player with the lowest score wins. 
-              </ul>
+   
+    
+                {/* <!-- Game Explanation --> */}
+                <div class="row">
+                  <div class="column">
+                    <h3>
+                      How to Play
+                    </h3>
+                  </div>
+                  <div class="column"></div>
+                </div>
+
+                  <div class="row">
+                  <div class="column">
+                    <p>
+                      Each player is dealt four cards.  These are kept secret from one another.  Before the game starts, memorize the two cards on the outside of your hand.  Then flip all cards face down and start the game.  Players will take turns drawing cards from the deck or discard pile and swapping them with cards in the play areas.  All extra cards go to the discard pile, face up.<br/><br/>The goal is to have the lowest total of cards by the end of the game.  If a power card is pulled from the draw deck, you may use the powers as described below.  If you think you have the lowest total, shout "Rat-a-tat-cat!"  The other player will have one last turn, then you'll flip all the cards face-up.  Total the cards, and see who won!
+                    </p>
+                  </div>
+                  <div class="column"></div>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <h3>
+                      Game Setup + Interactions
+                    </h3>
+                  </div>
+                  <div class="column"></div>
+                </div>
+
+                {/* <!-- Explanation of Player Spots --> */}
+                <div class="row">
+
+                  <div class="column">
+                    <img src="playAreasRules.png" alt="Image of the four player spots" />      
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="column">  
+                    <p>Each player gets for horizontal spots to play their cards on.</p>      
+                  </div>
+
+                </div>
+
+                {/* <!-- Explanation of Deck Logic --> */}
+                <div class="row">
+
+                  <div class="column">
+                    <img src="ruleDeck.png" alt="Image of the Deck Dealing a Card" />      
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="column">  
+                    <p>Click on the deck to deal a card.</p>      
+                  </div>
+
+                </div>
+
+                {/* <!-- Explanation of Flip Card --> */}
+                <div class="row">
+
+                  <div class="column">
+                    <img src="ruleFrontBack02.png" alt="Image of a Card Flipping" />      
+                  </div>
+
+                </div>
+
+
+                <div class="row">
+
+
+                  <div class="column">  
+                    <p>Double clicking on cards flip them around.</p>      
+                  </div>
+
+                </div>
+
+                {/* <!-- Explanation of Dragging Card --> */}
+                <div class="row">
+                  
+                  <div class="column">
+
+                    <img src="drag.png" alt="Card 1" />
+
+                  </div>
+
+                </div>
+
+              <div class="row">
+
+                  <div class="column">
+                    <p>Click and hold cards to move them.</p>
+                  </div>
+
+              </div>
+
+
+                {/* <!-- Number Cards --> */}
+                <div class="row">
+                  <div class="column">
+                    <h3>
+                      Number Cards
+                    </h3>
+                  </div>
+                  <div class="column"></div>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <img src="numberCardsRules.png" alt="An image of a 0, 5, and 9 card together" />
+                  </div>
+
+                  <div class="column">
+                    <p>Number cards count 0 to 9, the less rats in your hands the better!</p>
+                  </div>
+                </div>
+
+                {/* <!-- Power Cards -->
+
+                <!-- Power Card Introduction --> */}
+                <div class="row">
+                  <div class="column">
+                    <h3>
+                      Power Cards
+                    </h3>
+                  </div>
+                  <div class="column"></div>
+                </div>
+
+                {/* <!-- Rule Descriptions --> */}
+                <div class="row">
+                  <div class="column">
+                    <img src="powerCardsRules.png" alt="The power cards Draw 2, Peek, and Swap" />
+                  </div>
+                  <div class="column"></div>
+                </div>
+                  
+                  <div class="row">
+                  <div class="column"></div>
+                  <div class="column">
+                    <p>These are the power cards.  They perform special actions when drawn.</p>
+                    <ul>
+                      {/* <!-- Draw 2 rules --> */}
+                      <li><b>Draw 2:</b> Player will draw a card from the deck.  They can use it, or they can discard it and draw one other card from the deck.  If they do not want to use it, they will also discard the second one.</li>
+
+                      {/* <!-- Peek Rules --> */}
+                      <li><b>Peek:</b> Player can take a peek at any one of their own cards.  Then peek gets discarded. </li>
+                      
+                      {/* <!-- Swap Rules --> */}
+                      <li><b>Swap: </b> Any player who draws this can blindly swap their card with a card from the other player's hand.  No peeking!</li>
+                    </ul>
+                  </div>
+                </div>
+
+
               </Popover.Content>
             </Popover>
           );
