@@ -26,7 +26,7 @@ import Draggable from 'react-draggable';
         <RatatatBackCard image={`appImages/cardback.png`}></RatatatBackCard>
         </div>
           
-        <div onDoubleClick={() => setIsFlipped((prev) => !prev)}>
+        <div class="mt-3 ml-4" onDoubleClick={() => setIsFlipped((prev) => !prev)}>
         <RatatatCard image={`appImages/${props.front}.png`}></RatatatCard>
         </div>
     
