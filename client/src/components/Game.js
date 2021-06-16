@@ -51,8 +51,8 @@ class Game extends Component {
         )};
 
     handleNewGame = () => {
-        this.deck = [],
-        this.values = this.populateDeck()
+        this.deck = [];
+        this.values = this.populateDeck();
         this.setState(() => ({
             cards: [],
             value: '',
